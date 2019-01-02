@@ -50,6 +50,6 @@ exports.conf = {
 
 exports.help = {
     name: 'kayıtol',
-    description: 'Sunucuya kayıt olursunuz!Üye Rolunu Alırsın',
+    description: 'Sunucuya kayıt olursunuz|Üye rolünü alırsın',
     usage: 'kayıtol'
 };
