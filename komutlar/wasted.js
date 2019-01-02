@@ -32,6 +32,6 @@ exports.conf = {
 
 exports.help = {
   name: 'wasted',
-  description: 'wasted.',
+  description: 'Etiketlediğin kişinin fotoğrafına wasted çerçevesi koyar',
   usage: 'wasted'
 };
