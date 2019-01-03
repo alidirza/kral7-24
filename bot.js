@@ -140,3 +140,5 @@ client.on("guildMemberAdd", async (member) => {
       member.addRole(role)
 
 });
+const fs = require('fs');
+let kufurEngel = JSON.parse(fs.readFileSync("./jsonlar/kufurEngelle.json", "utf8"));
