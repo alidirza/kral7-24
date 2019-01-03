@@ -85,8 +85,8 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm Selam Knk Hoşgeldin');
+  if (msg.content.toLowerCase() === 'en iyi sunucu') {
+    msg.reply('King Army');
   }
 });
 
