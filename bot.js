@@ -142,3 +142,17 @@ client.on("guildMemberAdd", async (member) => {
 });
 const fs = require('fs');
 let kufurEngel = JSON.parse(fs.readFileSync("./jsonlar/kufurEngelle.json", "utf8"));
+client.on("message", msg => {
+  if (!msg.guild) return;
+  if (!kufurEngel[msg.guild.id]) return;
+  if (kufurEngel[msg.guild.id].küfürEngel === 'kapali') return;
+    if (kufurEngel[msg.guild.id].küfürEngel=== 'acik') {
+      const kufur = ["mk", "amk", "aq", "orospu", "oruspu", "oç", "sikerim", "yarrak", "piç", "amq", "sik", "amcık", "çocu", "sex", "seks", "amına", "orospu çocuğu", "sg", "siktir git"];
+  if (kufur.some(word => msg.content.toLowerCase().includes(word)) ) {
+    if (!msg.member.hasPermission("ADMINISTRATOR")) {
+      msg.delete()
+       msg.reply("Bu sunucuda küfürler **Gnarge** tarafından engellenmektedir! Küfür etmene izin vermeyeceğim!").then(message => message.delete(3000));
+    }
+}
+    }
+});
