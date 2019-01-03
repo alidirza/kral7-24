@@ -34,6 +34,6 @@ exports.conf = {
 
 exports.help = {
   name: 'otorolsıfırla', 
-  description: 'Slots oyunu oynar',
+  description: 'Otorol ile ilgili.',
   usage: 'otorolkapat'
 };
