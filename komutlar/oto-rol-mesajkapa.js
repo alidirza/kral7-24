@@ -37,6 +37,6 @@ exports.conf = {
 
 exports.help = {
   name: 'kapat otoyazı', 
-  description: 'Slots oyunu oynar',
+  description: 'Otorol mesajlarını kapatır',
   usage: 'otorolmesajkapat'
 };
