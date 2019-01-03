@@ -7,7 +7,7 @@ exports.run = async (bot, message, args) =>
 {
   	let profil = JSON.parse(fs.readFileSync("./otorol.json", "utf8"));
   var mentionedChannel = message.mentions.channels.first();
-  if (!mentionedChannel && args[0] !== "sıfırla") return message.channel.send("Ayarlamam İçin Bir Rol Etiketlemelisin. \nRolü Etiketleyemiyorsan **Rolün Etiketleme Seçeneğini Aktif Etmeyi Unutma** \nÖrnek Kullanım : +otorol @rol #kanal \n**Oto Yazı Kapatmak İstiyorsan +kapat otoyazı**");
+  if (!mentionedChannel && args[0] !== "sıfırla") return message.channel.send("Ayarlamam İçin Bir Rol Etiketlemelisin. \nRolü Etiketleyemiyorsan **Rolün Etiketleme Seçeneğini Aktif Etmeyi Unutma** \nÖrnek Kullanım : kral+otorol @rol #kanal \n**Oto Yazı Kapatmak İstiyorsan kral+kapat otoyazı**");
   if (message.guild.member(message.author.id).hasPermission(0x8))
     
     {
@@ -33,7 +33,7 @@ exports.run = async (bot, message, args) =>
 	})
 
 	const embed = new Discord.RichEmbed()
-		.setDescription(`:white_check_mark: Otorol başarıyla ${args[0]} olarak ayarlandı! \nOtorol Mesaj kanalı başarıyla ${mentionedChannel} olarak ayarlandı.\n\nOto Mesaj'ı kapatabilmek için **+otomesajkapat** yazabilirsiniz!`)
+		.setDescription(`:white_check_mark: Otorol başarıyla ${args[0]} olarak ayarlandı! \nOtorol Mesaj kanalı başarıyla ${mentionedChannel} olarak ayarlandı.\n\nOto Mesaj'ı kapatabilmek için **kral+otomesajkapat** yazabilirsiniz!`)
 		.setColor("RANDOM")
 		.setTimestamp()
 	message.channel.send({embed})
