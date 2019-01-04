@@ -92,7 +92,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'yapıncın kim') {
-    msg.reply(');
+    msg.reply('');
   }
 });
 
@@ -129,7 +129,7 @@ client.on("guildMemberAdd", async member => {
     .setTitle('Otorol Sistemi')
     .setDescription(`:loudspeaker: :inbox_tray:  @${member.user.tag}'a Otorol Verildi `)
 .setColor("GREEN")
-    .setFooter("Gnarge", client.user.avatarURL);
+    .setFooter("Kral", client.user.avatarURL);
 
   if (!giriscikis[member.guild.id].kanal) {
     return;
