@@ -92,7 +92,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'yapıncın kim') {
-    msg.reply('');
+    msg.reply('Kim olacak ALLAH');
   }
 });
 
