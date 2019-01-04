@@ -9,5 +9,5 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!`);
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("online");
-client.user.setGame("kral+yardım|Bu Bot King Army'ye Aittir." + client.guilds.size + " Sunucu " + client.users.size + " Kullanıcı ", "https://discord.gg/S6ES7TJ");
+client.user.setGame("Bot 19:00'a kadar bakımdadır" + client.guilds.size + " Sunucu " + client.users.size + " Kullanıcı ", "https://discord.gg/S6ES7TJ");
 }
