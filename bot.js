@@ -98,7 +98,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'adamsın') {
-    msg.reply(' ADAM :sunglasses: ' );
+    msg.reply(' ADAM :sunglasses: ');
   }
 });
 
