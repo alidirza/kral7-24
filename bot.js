@@ -90,6 +90,12 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'yapıncın kim') {
+    msg.reply(');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
