@@ -96,6 +96,14 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'adamsın') {
+    msg.reply(' ```Markdown css
+adam :sunglasses:
+```﻿ ');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
