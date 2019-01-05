@@ -10,8 +10,6 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("online");
    var oyun = [
-        "Destek sunucumuz saldırıya uğradı sunucumuza gelmek için g!desteksunucum yazabilirsiniz",
-        "Destek sunucumuz saldırıya uğradı sunucumuza gelmek için g!desteksunucum yazabilirsiniz",
         "💪 7/24 Aktif!",  
         "💡 kral+davet | Botumuzu ekleyin",
         "👨 35.000 Kullanıcı!",
