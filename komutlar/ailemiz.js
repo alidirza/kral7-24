@@ -24,6 +24,6 @@ exports.conf = {
 
 exports.help = {
   name: "ailemiz",
-  description: "Shows all the servers the bot is in.",
+  description: "Botun Hangi Sunucularda Olduğunu Gösterir.",
   usage: "ailemiz"
 };
