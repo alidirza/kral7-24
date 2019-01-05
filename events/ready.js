@@ -12,8 +12,8 @@ module.exports = client => {
    var oyun = [
         "💪 7/24 Aktif!",  
         "💡 kral+davet | Botumuzu ekleyin",
-        "👨 35.000 Kullanıcı!",
-        "🌍 115 Sunucuda Hizmet!",
+        "👨"+ client.users.size +"Kullanıcı!",
+        "🌍"+client.guilds.size+"Sunucuda Hizmet!",
         "kral+yardım 🔥 + kral+davet 🔥 + kral+otorol"
     ];
 
