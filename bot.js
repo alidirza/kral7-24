@@ -97,6 +97,12 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'seni kim yaptı') {
+    msg.reply('tabiki @alidirza');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content.toLowerCase() === 'adamsın') {
     msg.reply(' ADAM :sunglasses: ');
   }
