@@ -108,6 +108,12 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'turp') {
+    msg.reply('turbu çok severim :robot:');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
