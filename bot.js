@@ -115,11 +115,8 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'tııır') {
-    msg.reply('∧__∧
- (  >ω<)
-  (っ▄︻▇〓▄︻┻┳═:boom::boom:
- /　   )          / \');
+  if (msg.content.toLowerCase() === 'fire in the hole') {
+    msg.reply('💣');
   }
 });
 
