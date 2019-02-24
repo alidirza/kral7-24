@@ -114,6 +114,15 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'tııır') {
+    msg.reply('∧__∧
+ (  >ω<)
+  (っ▄︻▇〓▄︻┻┳═:boom::boom:
+ /　   )          / \');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
