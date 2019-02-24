@@ -116,7 +116,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'fire in the hole') {
-    msg.reply('💣');
+    msg.reply('💣 attı');
   }
 });
 
