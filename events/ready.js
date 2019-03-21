@@ -14,6 +14,7 @@ module.exports = client => {
         "💡 kral+davet | Botumuzu ekleyin",
         "👨"+ client.users.size +" Kullanıcı!",
         "🌍"+client.guilds.size+" Sunucuda Hizmet!",
+        "💪💡👨🌍 Yakında Yeni Update Geliyor Pusuda Kalın!!! 🌍👨💡💪",
         "kral+yardım 🔥 + kral+davet 🔥 + kral+otorol"
     ];
 
