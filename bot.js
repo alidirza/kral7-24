@@ -120,6 +120,47 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'kral+yardım') {
+    msg.reply('= Komut Listesi =
+
+[Komut hakkında bilgi için kral+yardım <komut adı>]
+
+kral+ailemiz          :: Botun Hangi Sunucularda Olduğunu Gösterir.
+kral+ban              :: İstediğiniz kişiyi banlar.
+kral+davet            :: Botun davet linkini gönderir.
+kral+emojiyazı        :: Mesajınızı emojiye çevirir.
+kral+eval             :: Kod denemek için kullanılır.
+kral+istatistik       :: Botun istatistik gösterir.
+kral+kayıtol          :: Sunucuya kayıt olursunuz|Üye rolünü alırsın
+kral+kick             :: İstediğiniz kişiyi sunucudan atar.
+kral+kilit            :: Kanalı istediğiniz kadar süreyle kitler.
+kral+kullanıcıbilgim  :: Komutu kullanan kişi hakkında bilgi verir.
+kral+load             :: Yeni eklenen komutu yükler.
+kral+mute             :: Sureli Susturur.
+kral+kapat otoyazı    :: Otorol ile ilgili.
+kral+otorolmesajkapat :: Otorol ile ilgili.
+kral+otorol-ayarla    :: Sunucuya Girenlere Verilecek Olan Otorolü Ayarlar.
+kral+otorolsıfırla    :: Otorol ile ilgili.
+kral+ping             :: Botun pingini gösterir.
+kral+reboot           :: Botu yeniden başlatır.
+kral+rol-ver          :: İstediğiniz kişiyi istediğiniz rolü verir.
+kral+sahip            :: Bütün sahip komutlarını verir.
+kral+yavaşmod         :: İstediğiniz Kişiye sarılırsınız.
+kral+sor              :: Soru sormaya yarar.
+kral+stresçarkı       :: Sizin için bir stres çarkı çevirir.
+kral+sunucubilgi      :: Sunucu hakkında bilgi verir.
+kral+sustur           :: İstediğiniz kişiyi  susturur.
+kral+temizle          :: Belirlenen miktar mesajı siler.
+kral+top10            :: Botun bulunduğu en iyi ilk 10 sunucu.
+kral+unban            :: İstediğiniz kişinin banını kaldırır.
+kral+unload           :: İstediğiniz bir komutu devre dışı bırakır.
+kral+uyar             :: İstediğiniz kişiyi uyarır.
+kral+wasted           :: Etiketlediğin kişinin fotoğrafına wasted çerçevesi koyar.
+kral+yardım           :: Tüm komutları gösterir.
+kral+yaz              :: İstediğiniz şeyi bota yazdırır.');
+  }
+});
 client.elevation = message => {
   if(!message.guild) {
 	return; }
