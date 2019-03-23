@@ -122,8 +122,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'kral+yardım') {
-    msg.reply('Komut Listesi
-kral+ailemiz           Botun Hangi Sunucularda Olduğunu Gösterir.
+    msg.reply('kral+ailemiz           Botun Hangi Sunucularda Olduğunu Gösterir.
 kral+ban               İstediğiniz kişiyi banlar.
 kral+davet             Botun davet linkini gönderir.
 kral+emojiyazı         Mesajınızı emojiye çevirir.
